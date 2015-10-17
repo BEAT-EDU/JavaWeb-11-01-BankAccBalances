@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <servlet-name>ShowBalance</servlet-name>
+    <servlet-class>com.beat_software.javaweb.bankAccBalance.controller.ShowBalance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowBalance</servlet-name>
+    <url-pattern>/show-balance</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RandomNumberServlet</servlet-name>
+    <servlet-class>com.beat_software.javaweb.RandomNumberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RandomNumberServlet</servlet-name>
+    <url-pattern>/random-number</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.beat_software.javaweb.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PrimeServlet</servlet-name>
+    <servlet-class>com.beat_software.javaweb.PrimeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrimeServlet</servlet-name>
+    <url-pattern>/prime</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
